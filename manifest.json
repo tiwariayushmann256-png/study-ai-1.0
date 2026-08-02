@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Study AI Logo</title>
 <style>
-  /* 1. फॉन्ट इम्पोर्ट - आधुनिक और साफ़ लुक के लिए */
-  @import url('https://googleapis.com');
+  /* 1. फॉन्ट इम्पोर्ट - Poppins Font की सही URL */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
   body {
     background-color: #0b0f19; /* गहरा प्रीमियम बैकग्राउंड */
@@ -28,6 +28,7 @@
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
   }
 
   /* एआई-बुक आइकॉन */
@@ -72,7 +73,7 @@
   .ai-node::before, .ai-node::after {
     content: '';
     position: absolute;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
   }
 
@@ -112,12 +113,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
-    position: relative;
   }
 
   .sub-title {
     font-size: 11px;
-    color: #707e94;
+    color: #a0aec0;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 5px;
@@ -137,8 +137,8 @@
   
   <!-- ब्रांड का नाम -->
   <div class="text-container">
-    <div class="main-title">Study <span class="ai-highlight">AI</span></div>
-    <div class="sub-title">Future of Learning</div>
+    <div class="main-title">Study <span class="ai-highlight">AI 9.0</span></div>
+    <div class="sub-title">By Ayushman • Smart Learning</div>
   </div>
 </div>
 
