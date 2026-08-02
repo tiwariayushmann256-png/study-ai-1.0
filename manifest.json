@@ -1,146 +1,16 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Study AI Logo</title>
-<style>
-  /* 1. फॉन्ट इम्पोर्ट - Poppins Font की सही URL */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
-
-  body {
-    background-color: #0b0f19; /* गहरा प्रीमियम बैकग्राउंड */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  /* लोगो कंटेनर */
-  .brand-logo {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 16px 28px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-  }
-
-  /* एआई-बुक आइकॉन */
-  .icon-container {
-    position: relative;
-    width: 50px;
-    height: 45px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  /* किताब के दो पन्ने */
-  .book-page {
-    width: 22px;
-    height: 100%;
-    background: linear-gradient(135deg, #00f2fe, #4facfe); /* चमकता हुआ स्काई ब्लू */
-    border-radius: 4px 12px 12px 4px;
-    box-shadow: 0 0 20px rgba(79, 172, 254, 0.4);
-  }
-
-  .book-page.right {
-    background: linear-gradient(135deg, #7f00ff, #e100ff); /* एआई का सिंबल - बैंगनी रंग */
-    border-radius: 12px 4px 4px 12px;
-    box-shadow: 0 0 20px rgba(225, 0, 255, 0.4);
-  }
-
-  /* बीच का एआई नेटवर्क नोड (जोड़) */
-  .ai-node {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 8px;
-    height: 8px;
-    background: #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 0 15px #ffffff, 0 0 30px #00f2fe;
-    z-index: 2;
-  }
-
-  /* एआई सर्किट्स (बारीक कनेक्शन लाइन्स) */
-  .ai-node::before, .ai-node::after {
-    content: '';
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-  }
-
-  .ai-node::before {
-    width: 4px;
-    height: 4px;
-    top: -12px;
-    left: -10px;
-    box-shadow: 0 0 8px #00f2fe;
-  }
-
-  .ai-node::after {
-    width: 4px;
-    height: 4px;
-    bottom: -12px;
-    right: -10px;
-    box-shadow: 0 0 8px #e100ff;
-  }
-
-  /* टेक्स्ट स्टाइलिंग */
-  .text-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-title {
-    font-size: 28px;
-    font-weight: 800;
-    color: #ffffff;
-    line-height: 1;
-    letter-spacing: 0.5px;
-  }
-
-  /* "AI" शब्द को अलग और हाई-टेक दिखाने के लिए */
-  .ai-highlight {
-    background: linear-gradient(90deg, #00f2fe, #e100ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-  }
-
-  .sub-title {
-    font-size: 11px;
-    color: #a0aec0;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-top: 5px;
-    font-weight: 600;
-  }
-</style>
-</head>
-<body>
-
-<div class="brand-logo">
-  <!-- विजुअल आइकॉन: खुली हुई डिजिटल किताब और एआई नेटवर्क -->
-  <div class="icon-container">
-    <div class="book-page left"></div>
-    <div class="ai-node"></div>
-    <div class="book-page right"></div>
-  </div>
-  
-  <!-- ब्रांड का नाम -->
-  <div class="text-container">
-    <div class="main-title">Study <span class="ai-highlight">AI 9.0</span></div>
-    <div class="sub-title">By Ayushman • Smart Learning</div>
-  </div>
-</div>
-
-</body>
-</html>
+{
+  "name": "Study AI 9.0",
+  "short_name": "Study AI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#0b0f19",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2997/2997295.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
